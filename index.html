@@ -905,9 +905,11 @@ setInterval(()=>{
 },20000);
 
 // ── INIT ──────────────────────────────────────────────────────────────────────
-showPage('scanner');
-renderTicker();
-fetchLiveFeed(); // background load
+document.addEventListener("DOMContentLoaded", function() {
+  showPage("scanner");
+  renderTicker();
+  fetchLiveFeed();
+});
 </script>
 </body>
 </html>
